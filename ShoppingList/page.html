@@ -1,0 +1,65 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Shopping list</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="practice shopping list app">
+    <meta name="authot" content="Martin Varga">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="containerDiv">
+        <h1>Shopping list</h1>
+        <p>3</p>
+
+        <form class="form-wrapper cf">
+            <input id="target" type="text" placeholder="Add new list item">
+            <button id="addItemButton" type="button">Add</button>   
+        </form>
+
+        <ul id="firstUl">
+            <li><span><i class="fa fa-trash"></i></span>bread</li>
+            <li><span><i class="fa fa-trash"></i></span>milk</li>
+            <li><span><i class="fa fa-trash"></i></span>chicken meat</li>
+        </ul>
+
+    </div>
+    <div id="tip">
+        <h2>Advices</h2>
+        <p id="signs">SW: sweet SL: salty NF: nonfood</p>
+        
+        <ul id="tipUl" class="dropdownContent">
+            <li class="adviceli">SW apple</li>
+            <li class="adviceli">SW banana</li>
+            <li class="adviceli">SW ingredients for PockMix</li>
+            <li class="adviceli">SW syrup</li>
+            <li class="adviceli">SL bread</li>
+            <li class="adviceli">SL chicken meat</li>
+            <li class="adviceli">SL cold meat</li>
+            <li class="adviceli">SL egg</li>
+            <li class="adviceli">SL margarin</li>
+            <li class="adviceli">SL milk</li>
+            <li class="adviceli">SL noodle</li>
+            <li class="adviceli">SL onion</li>
+            <li class="adviceli">SL pepper</li>
+            <li class="adviceli">SL potato</li>
+            <li class="adviceli">SL souce</li>
+            <li class="adviceli">SL sour cream</li>
+            <li class="adviceli">NF shampoo</li>
+            <li class="adviceli">NF shower gel</li>
+            <li class="adviceli">NF toalet paper</li>
+            <li class="adviceli">NF toothpaste</li>
+        </ul>
+
+    </div>
+
+<script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
