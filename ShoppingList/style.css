@@ -1,0 +1,213 @@
+body {
+    background-color: rgb(255, 244, 233);
+    margin: auto;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerDiv {
+    background-color: rgb(255, 101, 41);
+    box-shadow: 2px 3px 5px rgb(192, 192, 192);
+    border-radius: 10px 10px 0 0;
+}
+
+#tip {
+    background-color: rgb(255, 68, 68);
+    box-shadow: 2px 3px 5px rgb(192, 192, 192);
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+}
+
+#tip:hover {
+    background-color: rgb(255, 103, 103);
+}
+
+.dropdownContent {
+    display: none;
+    z-index: 1;
+}
+
+.adviceli {
+   padding-left: 20px;
+}
+
+h1 {
+    padding-top: 15px; 
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h2 {
+    padding: 15px 0; 
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(78, 78, 78)
+}
+
+.h2Active {
+    color: rgb(0, 0, 0);
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#signs {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+input:focus {
+    border: 3px solid #4286f4;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul :nth-child(2n) {
+    background-color: rgb(206, 206, 206)
+}
+
+li {
+    background-color: white;
+    padding-left: 0;
+    line-height: 40px;
+}
+
+.selected {
+    color: grey;
+    text-decoration: line-through;
+    
+}
+
+span {
+    margin-right: 20px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(255, 49, 49);
+    display: inline-block;
+    color: white;
+    width: 0;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+button {
+    width: 100%;
+    border: none;
+    background-color: rgb(55, 55, 211);
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+/*Clearing Floats*/
+.cf:before, .cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+.cf {
+    zoom:1;
+}    
+/* Form wrapper styling */
+.form-wrapper {
+    width: 100%;
+    background: #444;
+    background: rgba(0,0,0,.2);
+}
+
+/* Form text input */
+
+.form-wrapper input {
+    width: 66%;
+    height: 20px;
+    padding: 10px 15px;
+    float: left;   
+    border: 0;
+    font-size: 16px;
+    background: #eee;    
+}
+
+.form-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.form-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+}
+
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+}
+
+.form-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+}   
+
+/* Form submit button */
+.form-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 25%;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #d83c3c;
+    border-radius: 0 3px 3px 0;     
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}  
+
+.form-wrapper button:hover {    
+    background: #e54040;
+}  
+
+.form-wrapper button:focus {  
+    outline: 0;  
+}
+
+.form-wrapper button:hover:before {
+    border-right-color: #e54040;
+}
+
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before {
+        border-right-color: #c42f2f;
+}     
+
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}    
+
+@media screen and (min-width: 833px) {
+    .form-wrapper button {
+        width: 28%;
+    }
+}
+
